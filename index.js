@@ -41,7 +41,7 @@ var S = {
       if (i !== -1) {
         S.UI.simulate(decodeURI(action).substring(i + 3));
       } else {
-        S.UI.simulate('|#countdown 3||祝|雅洁|生日快乐|祝你|生日快乐|不管几岁|快乐万岁！|#icon heart|#icon heart-empty|#icon heart');
+        S.UI.simulate('|#countdown 3||祝|雅洁|生日快乐|祝你|天天快乐|不论几岁|快乐万岁！|#icon heart|#icon heart-empty|#icon heart');
       }
 
       S.Drawing.loop(function () {
