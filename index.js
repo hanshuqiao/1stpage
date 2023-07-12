@@ -41,7 +41,7 @@ var S = {
       if (i !== -1) {
         S.UI.simulate(decodeURI(action).substring(i + 3));
       } else {
-        S.UI.simulate('|#countdown 3||祝|雅洁|生日快乐|祝你|天天快乐|不论几岁|快乐万岁！|#icon heart|#icon heart-empty|#icon heart');
+        S.UI.simulate('|#countdown 3||祝|雅洁|生日快乐|祝你|天天快乐|不负去岁|你最珍贵！|不管几岁|快乐万岁！|#icon heart|#icon heart-empty|#icon heart');
       }
 
       S.Drawing.loop(function () {
@@ -235,7 +235,7 @@ S.UI = (function () {
           break;
 
         case 'icon':
-          S.ShapeBuilder.image(value + '.png', function (obj) {
+          S.ShapeBuilder.imageFile('loop/'+value + '.png', function (obj) {
             S.Shape.switchShape(obj);
           });
           break;
